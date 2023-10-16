@@ -22,7 +22,8 @@ This project explores the concept of bias in data by analyzing Wikipedia article
 2. Article Quality Predictions using ORES
    - Used the ORES machine learning system to obtain quality scores for each Wikipedia article.
    - The quality scores range from "FA" (Featured article) to "Stub" (Stub-class article).
-   - Ensured a log of articles for which quality scores could not be retrieved.
+   - The API call for 20,000+ articles took about 5 hours to complete. The initial round of calls produced about 4000 rows with errored predictions.
+   - These errors were then resolved in the second round of API calls.
 
 3. Data Integration
    - Combined Wikipedia data, population data, and regional division data using state names as the key.
@@ -31,6 +32,7 @@ This project explores the concept of bias in data by analyzing Wikipedia article
 
 4. Analysis
    - Calculated "articles-per-population" and "high-quality-articles-per-population" for each state.
+   - Displayed the top 10 and bottom 10 states according to the aforementioned metrics.
    - Defined "high quality" articles as those predicted by ORES to be either "FA" or "GA".
 
 5. Results Visualization
