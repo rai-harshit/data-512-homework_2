@@ -43,8 +43,6 @@ This project explores the concept of bias in data by analyzing Wikipedia article
 ### Research Implications
 Through this analysis, several insights and potential biases were observed. There might exist geographical biases, even in a well-resourced country like the US.
 
-### Reflections on Findings:
-
 1. Potential Biases:
    - Population Bias: This is the most common form of bias, where states or cities with larger populations get more attention and thus more detailed coverage. Conversely, less populated areas might receive fewer articles or lesser-detailed content.
 
