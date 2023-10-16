@@ -14,7 +14,8 @@ This project explores the concept of bias in data by analyzing Wikipedia article
 
 ### Steps to Reproduce
 1. Data Collection and Preprocessing
-   - Gathered data from Wikipedia about cities in each US state.
+   - Gathered data from Wikipedia about cities in each US state. The API call takes about 2 hours to retrieve data for about 20,000+ articles.
+   - After the initial city data acquisition, it was found that there were many duplicates. Those were dropped using Pandas' in-built function.
    - Acquired population data from the US Census Bureau for each state.
    - Extracted regional divisions as defined by the US Census Bureau.
 
@@ -43,20 +44,48 @@ Through this analysis, several insights and potential biases were observed. Ther
 ### Reflections on Findings:
 
 1. Potential Biases:
-   - Initially, an inherent bias towards populous states and major cities was expected.
+   - Population Bias: This is the most common form of bias, where states or cities with larger populations get more attention and thus more detailed coverage. Conversely, less populated areas might receive fewer articles or lesser-detailed content.
+
+   - Editorial Bias: Wikipedia, being a platform where anyone can contribute, is influenced by its editors' demographics. If certain demographic groups are overrepresented among Wikipedia editors, topics of interest to those groups might be covered more extensively.
+
+   - Historical Bias: Articles might be biased towards events or facts that have received more media attention historically. For example, cities that have been historically significant or have seen major events might have more detailed articles.
+
+   - Geographical Bias: Proximity to media centers or places with higher internet penetration can lead to more articles and more detailed coverage.
+
+   - Temporal Bias: Events or developments that have occurred recently might get more coverage due to their recency, even if their long-term significance is uncertain.
 
 2. Implications of Using Wikipedia as a Data Source:
-   - The results suggest that while Wikipedia is a vast resource, it may not always provide an unbiased representation.
-   - It's crucial to approach such data critically and consider potential biases.
+   - Crowdsourced Knowledge: Wikipedia's strength lies in its vast number of contributors. However, this also means that the data's accuracy and neutrality depend on the contributors' objectivity and knowledge.
+
+   - Vandalism and Misinformation: Given its open nature, Wikipedia is susceptible to vandalism or intentional misinformation, though there are robust systems in place to counteract this.
+
+   - Citation Needed: Not all information on Wikipedia is well-cited. Relying on uncited facts can introduce inaccuracies into research.
+
+   - Language and Cultural Perspective: Wikipedia articles can vary in detail and perspective based on the language or the cultural context of the article's primary contributors.
+
+   - Dynamic Content: Wikipedia is continually updated. This dynamism can be both an advantage (up-to-date information) and a challenge (changing data baseline) for research purposes.
 
 3. Potential Issues in Data Science Research:
-   - Using this data for certain research scenarios might perpetuate existing biases.
+   - Reinforcing Stereotypes: Algorithms trained on biased data can perpetuate and even amplify existing biases.
+
+   - Skewed Predictions: Predictive models might produce results that favor overrepresented groups or entities in the dataset.
+
+   - Loss of Trust: If end-users or stakeholders realize that a model's decisions are based on biased data, it can lead to a loss of trust in the model, the process, and the organization.
+
+   - Ethical Implications: Making decisions based on skewed data, especially in critical areas like healthcare or law enforcement, can have severe ethical and societal implications.
+
+   - Resource Misallocation: Decisions on resource allocation, based on skewed data, can lead to inefficiencies and missed opportunities.
 
 4. Situations Where Data Remains Useful:
-   - Despite biases, there are scenarios where this data might be useful.
+   - Initial Research: For a broad overview or a starting point in research, Wikipedia provides a comprehensive first look.
 
-5. Suggestions for Improvement:
-   - A researcher might supplement this dataset with information from local state-based resources or smaller community-driven encyclopedias to address limitations/biases.
+   - Trend Analysis: Given its dynamic nature, Wikipedia is great for understanding emerging trends or shifts in public interest.
+
+   - Comparative Analysis: While absolute data might have biases, relative comparisons (e.g., comparing coverage of two cities) can still provide insights.
+
+   - Cultural Insights: The way articles are written, the topics that are covered, and the details that are emphasized can provide cultural or societal insights.
+
+   - Historical Records: Wikipedia often captures events and developments as they happen, serving as a historical record.
 
 ### License
 This project is licensed under the MIT License. Please see the LICENSE file for more details.
