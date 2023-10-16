@@ -33,9 +33,9 @@ This project explores the concept of bias in data by analyzing Wikipedia article
 - Defined "high quality" articles as those predicted by ORES to be either "FA" or "GA".
 
 5. Results Visualization
-- Produced tables highlighting states and census divisions based on their coverage and quality on Wikipedia.
-- Top and bottom 10 US states by coverage and quality.
-- Census divisions ranked by coverage and quality.
+   - Produced tables highlighting states and census divisions based on their coverage and quality on Wikipedia.
+   - Top and bottom 10 US states by coverage and quality.
+   - Census divisions ranked by coverage and quality.
 
 ### Research Implications
 Through this analysis, several insights and potential biases were observed. There might exist geographical biases, even in a well-resourced country like the US.
@@ -63,8 +63,9 @@ A researcher might supplement this dataset with information from local state-bas
 This project is licensed under the MIT License. Please see the LICENSE file for more details.
 
 ### Acknowledgements
-Wikipedia for the dataset about US cities.
-US Census Bureau for the population and regional division data.
-ORES for providing the article quality predictions.
-Contact Information
+- Wikipedia for the dataset about US cities.
+- US Census Bureau for the population and regional division data.
+- ORES for providing the article quality predictions.
+
+### Contact Information
 For any additional questions or feedback, please contact [Harshit Rai] at [harshit@uw.edu].
