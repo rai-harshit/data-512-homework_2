@@ -2,15 +2,20 @@
 This project explores the concept of bias in data by analyzing Wikipedia articles about cities in different US states. The aim is to understand how the coverage of US cities on Wikipedia varies among states and how the quality of articles differs.
 
 ### Datasets
-- `us_cities_by_state_SEPT.2023.csv`: A dataset listing Wikipedia article pages about US cities from each state.
-- `NST-EST2022-POP.xlsx`: Population estimates for every US state.
-- `US States by Region - US Census Bureau.xlsx`: Listing of states in each US census regional division.
+- `data/us_cities_by_state_SEPT.2023.csv`: A dataset listing Wikipedia article pages about US cities from each state.
+- `data/NST-EST2022-POP.xlsx`: Population estimates for every US state.
+- `data/US States by Region - US Census Bureau.xlsx`: Listing of states in each US census regional division.
 
 ### Dependencies
 - Python 3
 - Jupyter Notebook
 - Pandas
 - Requests
+
+### Code
+- There are two notebooks that can be used to reproduce different aspects of this project:
+   - `notebooks/data_acquisition.ipynb` : This notebook deals with acquiring data from multiple sources, performing various data pre-processing operations, and saving the results in form of CSVs and JSON files.
+   - `notebooks/data_analysis.ipynb` : This notebook deals with performing various data analysis and data visualization tasks.
 
 ### Steps to Reproduce
 1. Data Collection and Preprocessing
